@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Aplicativo de finanças</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="sub-container">
+          <div class="amount-container">
+            <div class="title">
+              <h3>Quantia</h3>
+              <i class='bx bx-coin-stack'></i>
+            </div>
+            <p class="hide error" id="budget-error">
+              O valor não poder ser vazio ou negativo
+            </p>
+            <input
+              type="number"
+              id="total-amount"
+              placeholder="Insira a quantia"
+            />
+            <button class="submit" id="amount-button">Definir quantia</button>
+          </div>
+          <div class="user-container">
+            <div class="title">
+                <h3>Despesas</h3>
+                <i class='bx bx-money-withdraw' ></i>
+              </div>
+            <p class="hide error" id="product-title-error">
+              Os valores não podem ser vazios
+            </p>
+            <input
+              type="text"
+              id="product-title"
+              placeholder="Insira o nome do item"
+            />
+            <input
+              type="number"
+              id="user-amount"
+              placeholder="Insira o valor do item"
+            />
+            <button class="submit" id="check-amount">Inserir gastos</button>
+          </div>
+        </div>
+        <div class="output-container flex-space">
+          <div>
+            <p>Quantia total</p>
+            <span id="amount">0</span>
+          </div>
+          <div>
+            <p>Despesas</p>
+            <span id="expenditure-value">0</span>
+          </div>
+          <div>
+            <p>Restante</p>
+            <span id="balance-amount">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="list">
+        <h3>Lista de despesas</h3>
+        <div class="list-container" id="list"></div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
