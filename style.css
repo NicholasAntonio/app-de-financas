@@ -163,12 +163,20 @@ body{
     margin-left: auto;
 }
 
-.edit, .delete{
+.edit {
     background: transparent;
     cursor: pointer;
     margin-right: 1.5em;
     border: none;
-    color: #2ccc0cfa;
+    color: rgb(78, 78, 228) ;
+}
+
+.delete{
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: #ff465a;
 }
 
 @media screen and (max-width: 600px) {
